@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `wanderlusty`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `kelly knights`,
+      summary: `have passport, will travel`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A travel blog of a 40 something solo female traveller`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `marmalade`,
+      instagram: `wanderlusty.ca`,
     },
   },
   plugins: [
