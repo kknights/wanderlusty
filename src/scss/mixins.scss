@@ -1,12 +1,70 @@
 /* Media queries */
-@media (max-width: 42rem) {
-    blockquote {
-      padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
-      margin-left: var(--spacing-0);
+@mixin mobile-only {
+    @media screen and (max-width: 767px) {
+        @content;
     }
-    ul,
-    ol {
-      list-style-position: inside;
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
     }
-  }
-  
+}
+
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+// full width bleed 
+@mixin fullWidth() {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+// Centering content
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin wrapper(){
+    // margin: var(--spacing-0) auto;
+    margin: 0 auto;
+    max-width: var(--maxWidth-wrapper);
+    padding:  var(--spacing-10)  var(--spacing-5);
+}
+
+// visually hide content
+@mixin visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+// helper mixins
+%reset-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin backgroundFade {
+    transition: background-color 0.3s ease;
+}
+
+@mixin gradientText{
+    background-image: var(--rainbow-gradient-alt, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,20 +1,35 @@
 /* TODO: is this really needed? */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
 .global-wrapper {
-    // outline: 1px solid purple;
-    margin: var(--spacing-0) auto;
-    max-width: var(--maxWidth-wrapper);
-    padding: var(--spacing-10) var(--spacing-5);
-  }
+  @include wrapper();
+  padding-top: 0;
+}
   
-  .global-wrapper[data-is-root-path="true"] .bio {
-    margin-bottom: var(--spacing-20);
-  }
+.global-wrapper[data-is-root-path="true"] .bio {
+  margin-bottom: var(--spacing-20);
+}
   
-  .global-header {
-    margin-bottom: var(--spacing-12);
-  }
-  
+.global-header {
+  @include fullWidth();
+  margin-bottom: var(--spacing-12);
+  background: #000;
+}
+// .global-footer {
+//   // outline: 1px solid red;
+// }  
 //what is this for?
-  .gatsby-highlight {
-    margin-bottom: var(--spacing-8);
-  }
+.gatsby-highlight {
+  margin-bottom: var(--spacing-8);
+}
+
+
+
+.content-wrapper {
+  @include wrapper();
+}
