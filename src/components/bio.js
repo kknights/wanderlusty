@@ -47,7 +47,7 @@ const Bio = () => {
         <p className="bio-text">This is the bio component.</p>
         {author?.name && (
         <p className="bio-text">
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Written by <strong>{author.name}</strong> -- {author?.summary || null}
           {` `}
         </p>
       )}

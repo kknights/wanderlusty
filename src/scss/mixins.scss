@@ -35,6 +35,12 @@
     align-items: center;
 }
 
+@mixin wrapper(){
+    // margin: var(--spacing-0) auto;
+    margin: 0 auto;
+    max-width: var(--maxWidth-wrapper);
+    padding:  var(--spacing-10)  var(--spacing-5);
+}
 
 // visually hide content
 @mixin visually-hidden {
@@ -55,4 +61,10 @@
 
 @mixin backgroundFade {
     transition: background-color 0.3s ease;
+}
+
+@mixin gradientText{
+    background-image: var(--rainbow-gradient-alt, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
