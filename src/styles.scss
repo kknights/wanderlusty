@@ -4,18 +4,7 @@
 @import "./src/scss/typography";
 @import "./src/scss/layout";
 @import "./src/scss/header";
+@import "./src/scss/footer";
 @import "./src/scss/bio";
 @import "./src/scss/table";
 @import "./src/scss/posts";
-
-
-/* CSS Custom Properties Definitions */
-
-
-
-html {
-    background-color: var(--colour-background);
-    p {
-      color: #2B303A;
-    }
-  }
