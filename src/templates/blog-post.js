@@ -21,22 +21,26 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+        <header className="blog-post__header">
+          <h1 className="blog-post__title" itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
+          className="blog-post__section"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        {/* TODO: remove stupid HR */}
         <hr />
-        <footer>
+
+        <footer className="blog-post__footer">
           <Bio />
         </footer>
       </article>
+
       <nav className="blog-post-nav">
         <ul
-          style={{
+          style={{ /*TODO: move to a stylesheet bc this is annoying*/
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,

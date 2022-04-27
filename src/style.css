@@ -1,3 +1,6 @@
+/* TODO: convert to SCSS */
+
+
 /* CSS Custom Properties Definitions */
 
 :root {
@@ -240,7 +243,9 @@ a:focus {
 
 /* Custom classes */
 
+/* TODO: is this really needed? */
 .global-wrapper {
+  /* outline: 10px solid purple; */
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);

@@ -45,6 +45,7 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
+          This is the bio component. Why cant I put two paragraph tags here?
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://instagram.com/${social?.instagram || ``}`}>

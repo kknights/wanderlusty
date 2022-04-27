@@ -6,6 +6,9 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
+  // if blog title (which is inside of <header> is on the main page, then its an H1; otherwise its a text link back to the main page
+  // TODO: find a way to make this class based, to not confuse it with other headers in use on the site
+  
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
@@ -25,9 +28,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <p>&copy; {new Date().getFullYear()}, built with <a href="https://www.gatsbyjs.com">Gatsby</a></p>
       </footer>
     </div>
   )
