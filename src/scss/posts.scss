@@ -1,9 +1,43 @@
 .main-heading {
-  @include gradientText;
-
+    // @include gradientText;
+    // @include gradientAnimation;
+    // @include gradient;
+    display: inline-block;
     font-size: var(--fontSize-7);
     margin: 0;
   }
+
+
+  .gradient {
+		background: -webkit-linear-gradient(left, rgb(246, 223, 108), rgb(129, 180, 147), rgb(0, 155, 172), rgb(129, 180, 147), rgb(246, 223, 108));
+		background-size: 150% 100%;
+		background-clip: text;
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+		box-decoration-break: clone;
+		-webkit-box-decoration-break: clone;
+		background-position-x: 0%;
+		animation: gradient 3s ease-in-out 0;
+		animation-iteration-count: infinite;
+		animation-fill-mode: both;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position-x: 0%;
+		}
+		50% {
+			background-position-x: 100%;
+		}
+		100% {
+			background-position-x: 0%;
+		}
+	}
+
+
+
+
+
   
   .post-list-item {
     margin-bottom: var(--spacing-8);
@@ -16,6 +50,7 @@
   
   .post-list-item h2 {
     @include gradientText;
+    display: inline-block;
     font-size: var(--fontSize-4);
     margin-bottom: var(--spacing-2);
     margin-top: var(--spacing-0);
@@ -36,4 +71,4 @@
   
   .blog-post-nav ul {
     margin: var(--spacing-0);
-  }
+  } 

@@ -39,7 +39,7 @@
     // margin: var(--spacing-0) auto;
     margin: 0 auto;
     max-width: var(--maxWidth-wrapper);
-    padding:  var(--spacing-10)  var(--spacing-5);
+    padding:  var(--spacing-10)      var(--spacing-5);
 }
 
 // visually hide content
@@ -64,7 +64,16 @@
 }
 
 @mixin gradientText{
-    background-image: var(--rainbow-gradient-alt, #fff);
+    background: var(--rainbow-gradient-alt, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin gradientAnimation {
+    animation: linear-gradient 0.3s ease-in-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both
+}
+
+
+
