@@ -13,4 +13,4 @@ import "./src/styles.scss"
 
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import "prismjs/themes/prism.css"   
