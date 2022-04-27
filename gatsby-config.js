@@ -13,6 +13,14 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: ["${__dirname}/src/styles.scss", "${__dirname}/src/styles.css"],
+        }
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

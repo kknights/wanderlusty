@@ -32,7 +32,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <aside className="bio">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -45,14 +45,15 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
+          This is the bio component. Why cant I put two paragraph tags here?
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://instagram.com/${social?.instagram || ``}`}>
-            You should follow them on Instagram
+            You should follow her on Instagram
           </a>
         </p>
       )}
-    </div>
+    </aside>
   )
 }
 
