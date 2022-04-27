@@ -65,14 +65,18 @@
 
 @mixin gradientText{
     background: var(--rainbow-gradient-alt, #fff);
+    background-position-x: 0%;
+    background-size: 150% 100%;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @mixin gradientAnimation {
-    animation: linear-gradient 0.3s ease-in-out 0;
+    animation: gradient 60s ease-in-out 0;
     animation-iteration-count: infinite;
-    animation-fill-mode: both
+    animation-fill-mode: both;
 }
 
 
