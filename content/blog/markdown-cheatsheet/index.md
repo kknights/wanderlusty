@@ -1,7 +1,7 @@
 ---
 title: markdown cheatsheet
 date: "2022-04-26T22:12:03.284Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+description: a markdown cheatsheet because I only know HTML
 featuredImage: ./alice.jpg
 
 ---
