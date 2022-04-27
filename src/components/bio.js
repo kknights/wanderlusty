@@ -43,16 +43,21 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
-        <p>
-          This is the bio component. Why cant I put two paragraph tags here?
+      <div className="bio-textwrapper">
+        <p className="bio-text">This is the bio component.</p>
+        {author?.name && (
+        <p className="bio-text">
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://instagram.com/${social?.instagram || ``}`}>
-            You should follow her on Instagram
-          </a>
         </p>
       )}
+
+        <p className="bio-text">
+          <a href={`https://instagram.com/${social?.instagram || ``}`}> You should follow her on Instagram</a>
+        </p>
+
+      </div>
+
     </aside>
   )
 }
