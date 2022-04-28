@@ -25,11 +25,20 @@
 
 
 
+.post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 
+}
   
   .post-list-item {
-    margin-bottom: var(--spacing-8);
-    margin-top: var(--spacing-8);
+    outline: 1px solid white;
+    margin: var(--spacing-3);
+    padding: var(--spacing-5);
+    // margin-bottom: var(--spacing-8);
+    // margin-top: var(--spacing-8);
+    flex-basis: 150px;
+    flex-grow: 1;
   }
   
   .post-list-item p {

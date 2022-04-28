@@ -1,3 +1,14 @@
+.global-header {
+  @include fullWidth();
+  margin-bottom: var(--spacing-12);
+  background: darken(#162C35, 5%);
+  &:after {
+    @include gradientLine;
+  }
+}
+
+
+
 .header-link-home {
     font-weight: var(--fontWeight-bold);
     font-family: var(--font-heading);

@@ -80,4 +80,14 @@
 }
 
 
+@mixin gradientLine {
 
+    background:var(--rainbow-gradient-alt);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0.1em;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}

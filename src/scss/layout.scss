@@ -15,11 +15,7 @@ html, body {
   margin-bottom: var(--spacing-20);
 }
   
-.global-header {
-  @include fullWidth();
-  margin-bottom: var(--spacing-12);
-  background: #000;
-}
+
 // .global-footer {
 //   // outline: 1px solid red;
 // }  
