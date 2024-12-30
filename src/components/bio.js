@@ -44,7 +44,7 @@ const Bio = () => {
         alt="Profile picture"
       />
       <div className="bio-textwrapper">
-        <p className="bio-text">This is the new bio component.</p>
+        <p className="bio-text">This is the 2024 bio component.</p>
         {author?.name && (
         <p className="bio-text">
           Written by <strong>{author.name}</strong> -- {author?.summary || null}
