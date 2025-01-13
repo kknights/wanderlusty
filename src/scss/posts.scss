@@ -1,7 +1,9 @@
 .main-heading {
     display: inline-block;
     font-size: var(--fontSize-7);
+    font-family: var(--fontFamily-display);
     margin: 0;
+    outline: 1px solid red;
   }
 
 
